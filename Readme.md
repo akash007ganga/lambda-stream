@@ -21,3 +21,20 @@ method reference
 in case of instance method = object :: method Name
 in case of static method = class name:: method name
 in case of target = Class Name :: method name
+
+3) Parallel Stream
+use it when
+1) problem is parallelizable
+2) willing to spent lot more resource
+3) datasize is big enough
+4) task of computation is big enough
+
+4) What is Stream
+Stream is a abstruction. It doesn't have any data. Stream doesn't mutate data. It does transform 
+from one to next.
+
+Functions:
+filter : no member or every member or anything between
+map: Transform values. Number of output = number of input. Input type and output type can be very different
+reduce: take input, take the first element, perform operation, push the result-> result will be input...
+        It can change a stream to single value.
