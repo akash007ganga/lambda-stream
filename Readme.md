@@ -38,3 +38,16 @@ filter : no member or every member or anything between
 map: Transform values. Number of output = number of input. Input type and output type can be very different
 reduce: take input, take the first element, perform operation, push the result-> result will be input...
         It can change a stream to single value.
+        
+5) how does Streams work
+
+Streams are lazy. There are two sets of operations. Intermediate operations and terminal operations. 
+Intermediate operations are postponed for evaluation. It builds pipeline of functions but doesn't do any work.
+_7_StreamPerformance : here all the sequence of computations are applied one one element from the collection 
+at a time. Like 
+Computatioon 1: element: 1, is it greater than 3 : no, go ahead
+Computatioon 2: element: 2, is it greater than 3 : no, go ahead
+Computatioon 3: element: 3, is it greater than 3 : no, go ahead
+Computatioon 4: element: 5, is it greater than 3 : yes, is it even: no, go ahead
+Computatioon 5: element: 4, is it greater than 3 : yes, is it even: yes, double it. this is our element
+
