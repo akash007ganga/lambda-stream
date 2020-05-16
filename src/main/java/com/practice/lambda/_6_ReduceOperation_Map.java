@@ -20,7 +20,7 @@ public class _6_ReduceOperation_Map {
 	
 	public static void main(String[] args) {
 
-		//create a map as name and age as key and person as value
+		//create a map as name and id as key and person as value
 		List<Person> people = createPerson();
 		System.out.println(
 				people.stream()
@@ -40,7 +40,7 @@ public class _6_ReduceOperation_Map {
 
 		//create a map with
 		//key : name
-		//value: age of all the people with same name
+		//value: id of all the people with same name
 		System.out.println("--------------");
 
 		System.out.println(

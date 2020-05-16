@@ -23,6 +23,8 @@ public class _7_StreamPerformance {
 		       .map(e -> e * 2)
 		       .findFirst());
 		
+		System.out.println("--------------");
+		
 		//prove of the above
 		
 		System.out.println(
@@ -30,8 +32,17 @@ public class _7_StreamPerformance {
 				       .filter(_7_StreamPerformance::isGreterThan3)
 				       .filter(_7_StreamPerformance::isEven)
 				       .map(_7_StreamPerformance::doubleIt)
-				       .findFirst());
+				       .findFirst()); //if terminal operations are not done, streams won't run any method
 		
+		System.out.println("--------------");
+		
+				numbers.stream()
+				       .filter(_7_StreamPerformance::isGreterThan3)
+				       .filter(_7_StreamPerformance::isEven)
+				       .map(_7_StreamPerformance::doubleIt);
+				       //.findFirst(); //if terminal operations are not done, streams won't run any method
+				
+				System.out.println("Done: ");
 	}
 	
 	public static boolean isGreterThan3(int number) {
