@@ -1,6 +1,6 @@
 package com.practice.lambda;
 
-public class _1_LambdaExample1 {
+public class _01_LambdaExample1 {
 
 	public static void main(String[] args) {
 		startThreadWithoutLambda();

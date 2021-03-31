@@ -3,7 +3,7 @@ package com.practice.lambda;
 import java.util.Arrays;
 import java.util.List;
 
-public class _7_StreamPerformance {
+public class _07_StreamPerformance {
 	public static void main(String[] args) {
 		List<Integer> numbers = Arrays.asList(1, 2, 3, 5, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 
 				                              19, 20);
@@ -29,17 +29,17 @@ public class _7_StreamPerformance {
 		
 		System.out.println(
 				numbers.stream()
-				       .filter(_7_StreamPerformance::isGreterThan3)
-				       .filter(_7_StreamPerformance::isEven)
-				       .map(_7_StreamPerformance::doubleIt)
+				       .filter(_07_StreamPerformance::isGreterThan3)
+				       .filter(_07_StreamPerformance::isEven)
+				       .map(_07_StreamPerformance::doubleIt)
 				       .findFirst()); //if terminal operations are not done, streams won't run any method
 		
 		System.out.println("--------------");
 		
 				numbers.stream()
-				       .filter(_7_StreamPerformance::isGreterThan3)
-				       .filter(_7_StreamPerformance::isEven)
-				       .map(_7_StreamPerformance::doubleIt);
+				       .filter(_07_StreamPerformance::isGreterThan3)
+				       .filter(_07_StreamPerformance::isEven)
+				       .map(_07_StreamPerformance::doubleIt);
 				       //.findFirst(); //if terminal operations are not done, streams won't run any method
 				
 				System.out.println("Done: ");

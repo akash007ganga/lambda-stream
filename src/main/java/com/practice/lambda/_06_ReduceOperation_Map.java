@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class _6_ReduceOperation_Map {
+public class _06_ReduceOperation_Map {
 	
 	public static List<Person> createPerson() {
 		return Arrays.asList(
